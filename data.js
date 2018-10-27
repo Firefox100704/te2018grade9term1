@@ -1,4 +1,5 @@
 // Example
+<<<<<<< HEAD
 let message = "unicurl";
 console.log(message);
  
@@ -23,3 +24,7 @@ console.log(oceanage)
 
 
 // Type your code below!
+=======
+let die = undefined;
+console.log(die);
+>>>>>>> 24ea64003293fa08e66a883b6412fd4a69f46350
