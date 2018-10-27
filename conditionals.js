@@ -5,29 +5,54 @@ const READLINE = require("readline-sync");
 // an adult. Write code that prints whether or not someone can see an
 // R-rated movie.
 console.log("*** Problem 1: R-rated ***");
-let age = READLINE.question("Enter your age: ");
-let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
+let age = READLINE.question("Enter your age:");
+let withAdult = READLINE.question("Are you with an adult? (yes or no):");
 
+if(age >= 17 || withAdult == "yes"){
 
+console.log("watch movie")
+
+}else{
+
+	console.log("you need an adult")
+}
 // **** Problem 2: Umbrella ****
 // You should bring an umbrella when you travel, but only if it is raining.
 // However, if it is thunderstorming, you should not bring an umbrella since
 // that's bad luck. Write code that prints if someone should bring an umbrella
 // with them.
 console.log("*** Problem 2: Umbrella ***");
-let raining = READLINE.question("Is it raining? (yes or no): ");
-let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
+let raining = READLINE.question("Is it raining? (yes or no):");
+let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no):");
 
+if(raining == "no" || thunderstorming == "yes"){
 
+console.log("dont bring umbrella")
+
+}else{
+
+	console.log("bring umbrella")
+}
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
 // them are smiling, or if neither are smiling. Write code that prints if we
 // are in trouble.
 console.log("*** Problem 3: Monkey Trouble ***");
-let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
-let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
+let bubbles = READLINE.question("Is Bubbles smiling? (yes or no):");
+let spankey = READLINE.question("Is Spankey smiling? (yes or no):");
 
+if(spankey == "yes" || bubbles == "no"){
 
+console.log("you are not in trouble")
+
+}
+if(spankey == "no" || bubbles == "yes"){
+
+console.log("you are not in trouble")}
+else{
+
+	console.log("you getting in trouble")
+}
 // **** Problem 4: First Place ****
 // Write code that prints the largest of three scores. If there is a tie for
 // first place, simply print one of the tie winners.
@@ -35,6 +60,7 @@ console.log("*** Problem 4: First Place ***");
 let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
+
 
 
 // **** Problem 5: Phone Shopping ****
