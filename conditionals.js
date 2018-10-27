@@ -16,7 +16,7 @@ console.log("watch movie")
 
 	console.log("you need an adult")
 }
-// **** Problem 2: Umbrella ****
+// *** Problem 2: Umbrella ****
 // You should bring an umbrella when you travel, but only if it is raining.
 // However, if it is thunderstorming, you should not bring an umbrella since
 // that's bad luck. Write code that prints if someone should bring an umbrella
