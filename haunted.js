@@ -10,7 +10,7 @@ let player = {
   weapon: "fists",
   item: "flashlight",
 };
-//k
+
 console.log();
 console.log("*** WELCOME TO THE HAUNTED HOUSE ***");
 player.name = READLINE.question("What is your name?: ");
