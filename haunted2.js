@@ -1,10 +1,12 @@
+const READLINE = require("readline-sync");
+
 let player = {
   name: undefined,
   courage: 0,
   intellect: 0,
   strength: 0,
   charm: 0,
-  weapon: "plank",
+  weapon: "hands",
   item: "flashlight",
   item2: null,
 };
@@ -24,7 +26,7 @@ if(enterHouse == "y" || enterHouse == "yes") {
   console.log(`${player.name} finds bloods that tracks around the house leading towards each door`);
  console.log("you have three doors");
 
- let choice = READLINE.question("which door do you want to open? (door1 or door2 or door3)");
+ let choice = READLINE.question("which door do you want to open? (door1 or door2)");
 
  if (choice == "door1"){
   console.log(`${player.name} player finds a note`);
@@ -36,13 +38,28 @@ if(enterHouse == "y" || enterHouse == "yes") {
   }
   if (choice == "door2"){
     console.log(`${player.name} finds bloody operating tools`);
-    console.log(`${player.weapon} `)
+    console.log(`${player.name} also finds a gun `)
   }
- console.log()
+ player.weapon("gun") 
 } 
 else {
   player.intellect++;
   console.log(`${player.name} decides not to open the door. However...`);
   // continue the story
 }
+if (enterHouse == "n" || enterHouse == "no")
+console.log(`${player.name} sees a dead body hanging and a note on it`)
+player.courage = player.courage - 5
+let note = READLINE.question("will you pick up the note")
+  if(note == "yes" || note == "y"){
+   player.courage = player.courage + 5
+   
+
+   
+  }
+
+
+
+
+
 console.log("Thanks for playing!");
