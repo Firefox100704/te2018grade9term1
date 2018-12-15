@@ -4,7 +4,7 @@ const READLINE = require("readline-sync");
 Write a function that prints values from 10 to 0, counting down. Use a while
 loop!
 */
-function countdown() {
+/*function countdown() {
 let i = 10
 while(i >=0){
 	console.log(i)
@@ -22,11 +22,17 @@ When they finally do enter the correct password, exit the loop and print a
 congratulatory message.
 */
 function getPassword() {
+let guess = READLINE.question("")
+let password = ("password")
+while(password = "password"){
+	console.log("wrong password")
 
+}
+console.log("correct")
 }
 
 // Test below
-//getPassword();
+getPassword();
 
 /**** Problem 3 ****
 Enhance your function above to only allow the user to try entering the correct
