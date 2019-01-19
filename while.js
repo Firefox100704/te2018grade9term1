@@ -21,11 +21,14 @@ enters the correct password, the program will keep asking for all eternity!
 When they finally do enter the correct password, exit the loop and print a
 congratulatory message.
 */
-function getPassword() {
+/*function getPassword() {
 let guess = READLINE.question("")
 let password = ("password")
-while(password = "password"){
+
+while(!(guess == password)){
 	console.log("wrong password")
+	console.log("some  hint")
+	guess = READLINE.question("")
 
 }
 console.log("correct")
